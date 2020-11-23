@@ -27,12 +27,19 @@
 >2. 采用交互式方式实例化某学生；<br>
 >3. 设计程序完成上述的业务逻辑处理，并且把“古诗处理后的输出”结果存储到学生基本信息所在的文本文件A中。<br>
 ## 实验过程
->1. 创建2个接口 StuManage和TchManage ，
->>  用public abstract void setFee(double fee)定义学生缴纳学费、public  double getFee()定义学生查学费的方法；<br>
->>  用public abstract void setPay(double pay)定义教师发放薪水、public double getPay()定义教师查询薪水的方法。<br>
->2. 创建博士研究生类 DoctoralStu ，用implements实现2个接口 StuManage和TchManage ，
->>  定义姓名、性别、年龄、每学期学费、每月薪水等属性，设置姓名、性别、年龄的set、get方法（自动生成）；<br>
->>  重写前两个接口中所有方法（非抽象类实现某接口，必须重写此接口中所有方法），即setFee()、getFee()、setPay()、getPay()方法。（自动生成）<br>
+>1. 创建一个封装类：即学生类Student，
+>>  定义学生的基本属性name、sex、age，
+>>  利用super设置有参和无参的构造方法，
+>>  设置set()、get()方法以及toString()方法；<br>
+>2. 创建一个统计古诗中某个字出现的次数的类time
+>>  创建BufferedReader对象读取文本文件A
+>>  初始化StringBuffer对象<br>
+>>  创建一个空字符串
+>>  利用while方法，写入readLine()方法判断每一行的内容有没有被读取到，
+>>  再用append()方法将实例化的StringBuffer对象和字符串拼接在一起；
+>>  声明
+>> 
+>> 
 >3. 创建测试类Test，
 >>  用Scanner相关方法实现运行时交互式输入，即实例化博士生；<br>
 >>  写出年收入和学费的计算方法以及两者之差；<br>
