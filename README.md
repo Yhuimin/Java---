@@ -129,7 +129,7 @@ Scanner scan = new Scanner(System.in);
 ```	
 
 ## 运行结果
-![img]()
+![img](https://p.qlogo.cn/qqmail_head/5cXMEH7OTmzhqvibzsJgjic2XWRfoh1ofqqOvTWOqia9pK4hRwQxBegDO2uJczmhRuY/0)
 ## 编程感想
 > 通过此次试验，我学会了字符串String及其方法的使用;<br>
 > 理解了文件的读取/写入方法；<br>
