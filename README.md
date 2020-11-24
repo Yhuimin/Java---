@@ -26,37 +26,37 @@
 >2. 采用交互式方式实例化某学生；<br>
 >3. 设计程序完成上述的业务逻辑处理，并且把“古诗处理后的输出”结果存储到学生基本信息所在的文本文件A中。<br>
 ## 实验过程
->1. 创建一个封装类：即学生类Student，<br>
->>     定义学生的基本属性name、sex、age，<br>
->>     利用super设置有参和无参的构造方法，<br>
->>     设置set()、get()方法以及toString()方法；<br>
->2. 创建一个统计古诗中某个汉字出现的次数的类time（即从字符串中提取子字符串，需要用到正则表达式）<br>
->>     创建BufferedReader对象读取文本文件A；<br>
->>     初始化StringBuffer对象；<br>
->>     创建一个空字符串；<br>
->>     利用while方法，写入readLine()方法判断每一行的内容有没有被读取到；<br>
->>     再用append()方法将实例化的StringBuffer对象和字符串拼接在一起；<br>
->>     声明要统计的汉字；<br>
->>     利用正则表达式中的两个类：Pattern和Matcher的相关方法以及find()方法统计所求汉字出现的次数。 <br>
+>1. 创建一个封装类：即学生类Student，
+>>     定义学生的基本属性name、sex、age，
+>>     利用super设置有参和无参的构造方法，
+>>     设置set()、get()方法以及toString()方法；
+>2. 创建一个统计古诗中某个汉字出现的次数的类time（即从字符串中提取子字符串，需要用到正则表达式）
+>>     创建BufferedReader对象读取文本文件A；
+>>     初始化StringBuffer对象；
+>>     创建一个空字符串；
+>>     利用while方法，写入readLine()方法判断每一行的内容有没有被读取到；
+>>     再用append()方法将实例化的StringBuffer对象和字符串拼接在一起；
+>>     声明要统计的汉字；
+>>     利用正则表达式中的两个类：Pattern和Matcher的相关方法以及find()方法统计所求汉字出现的次数。
 >3. 创建测试类Test，
->>     用Scanner相关方法实现运行时交互式输入，即实例化学生；<br>
->>     利用文件字符的输入输出流写出读取和写入的文件；<br>
->>     利用FileReader方法将读取的文件设为只读文件。<br>
->>     定义一个char型数组；<br>
->>     利用Writer流的子类FileWriter创建指向目的地的输出流和Reader流的子类FileReader创建源的输入流；<br>
->>    （输出流的目的是提供一个通往目的地的通道）(输入流的目的是提供一个读取源中数据的通道)<br>
->>     利用write方法把学生类的基本信息写入到缓冲区；<br>
->>     利用for循环和if判断方法添加“，”和“。”；<br>
->>     利用flush()方法将当前缓冲区的内容写入到目的地；<br>
->>     最后利用close()方法关闭所有打开的流。<br>
+>>     用Scanner相关方法实现运行时交互式输入，即实例化学生；
+>>     利用文件字符的输入输出流写出读取和写入的文件；
+>>     利用FileReader方法将读取的文件设为只读文件;
+>>     定义一个char型数组；
+>>     利用Writer流的子类FileWriter创建指向目的地的输出流和Reader流的子类FileReader创建源的输入流；
+>>    （输出流的目的是提供一个通往目的地的通道，输入流的目的是提供一个读取源中数据的通道）；
+>>     利用write方法把学生类的基本信息写入到缓冲区；
+>>     利用for循环和if判断方法添加“，”和“。”；
+>>     利用flush()方法将当前缓冲区的内容写入到目的地；
+>>     最后利用close()方法关闭所有打开的流。
 >4. 类中的异常处理，根据具体情况而定（方法多样）。<br>
->>     方法一：<br>
->>     使用try-catch语句：<br>
->>     将可能出现异常的语句放在try部分，一旦try部分抛出异常对象，那么try部分将立刻结束执行<br>
->>     （如果try部分没有抛出异常，则继续执行try部分的语句。即try部分不受任何影响。）<br>
->>     转而执行相应的catch部分，异常后的处理放在catch部分。<br>
->>     方法二：<br>
->>     直接在main方法之后添加throws IOException，即public static void main(String[] args) throws IOException <br>
+>>     方法一：
+>>     使用try-catch语句：
+>>     将可能出现异常的语句放在try部分，一旦try部分抛出异常对象，那么try部分将立刻结束执行
+>>     （如果try部分没有抛出异常，则继续执行try部分的语句。即try部分不受任何影响。）
+>>     转而执行相应的catch部分，异常后的处理放在catch部分。
+>>     方法二：
+>>     直接在main方法之后添加throws IOException，即public static void main(String[] args) throws IOException 
 ## 核心代码
 ```
 BufferedReader br = null;
@@ -129,7 +129,7 @@ Scanner scan = new Scanner(System.in);
 ```	
 
 ## 运行结果
-![img](https://p.qlogo.cn/qqmail_head/5cXMEH7OTmzhqvibzsJgjic2XWRfoh1ofqHPSUaE6xbDicxsFQJdic7qdKZuFn99tGtI/0)
+![img]()
 ## 编程感想
 > 通过此次试验，我学会了字符串String及其方法的使用;<br>
 > 理解了文件的读取/写入方法；<br>
